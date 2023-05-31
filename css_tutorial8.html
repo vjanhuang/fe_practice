@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            font-family: arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flex {
+            background-color: aquamarine;
+            border: 1px solid black;
+        }
+
+        .flex1 {
+            flex-basis: auto;
+        }
+
+        .flex1:after {
+            content: 'flex-basis: auto;'
+        }
+
+        .flex2 {
+            flex-basis: min-content;
+        }
+
+        .flex2:after {
+            content: 'flex-basis: min-content;'
+        }
+
+        .flex3 {
+            flex-basis: max-content;
+        }
+
+        .flex3:after {
+            content: 'max-content';
+        }
+
+        .flex4 {
+            flex-basis: fit-content;
+        }
+
+        .flex4:after {
+            content: 'fit-content';
+        }
+
+        #grid-container {
+            display: grid;
+            grid: repeat(2, 60px) / auto-flow 80px;
+        }
+
+        #grid-container>div {
+            background-color: aqua;
+            height: 40px;
+            width: 40px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="container">
+        <li class="flex flex1"></li>
+        <li class="flex flex2"></li>
+        <li class="flex flex3"></li>
+        <li class="flex flex4"></li>
+    </ul>
+    <div id="grid-container">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+</html>

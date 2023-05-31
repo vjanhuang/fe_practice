@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [att="ATTVALUE"] {
+            color: blue
+        }
+
+        [href*="example.com"] {
+            color: green;
+        }
+
+        [href^="example"] {
+            font-style: italic;
+        }
+
+        [href$=".com"] {
+            font-size: 20px;
+        }
+
+        /* p:hover {
+            font-size: 50px;
+        } */
+
+        .my-element::after {
+            content: "affter";
+        }
+
+        li::marker {
+            color: green;
+        }
+
+        p::selection {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <p att="attValue">This is a paragraph.</p>
+    <p att="ATTVALUE">This is a paragraph.</p>
+    <a href="example.com">example</a>
+    <a href="example2.com">example2</a>
+    <a href="example3.com">example3</a>
+    <span class="my-element">123</span>
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+
+</html>
