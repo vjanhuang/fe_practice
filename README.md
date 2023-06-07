@@ -1,2 +1,3 @@
-# fe_practice
-一些前端小练习
+# 前端练习
+css_tutorial主要是一些关于css概念的练习，
+one-page-project是一个页面的练习。
