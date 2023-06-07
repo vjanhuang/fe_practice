@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    font-family: 'Playfair', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hero section */
+#hero {
+    background-image: url(./img/bg1.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 0;
+    z-index: 1;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+
+#hero h1 {
+    display: block;
+    width: fit-content;
+    font-size: 2rem;
+    position: relative;
+    color: rgba(114, 113, 133, 0.893);
+}
+
+#hero .cta {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: transparent;
+    border: 1px solid rgb(169, 117, 237);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease background-color;
+}
+
+#hero .cta:hover {
+    color: white;
+    background-color: rgb(169, 117, 237);
+}
+
+/* Service section */
+#services {
+    background-image: url(./img/bg2.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 0;
+}
+
+#services .services {
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 100px 0;
+}
+
+#services .section-title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    text-align: center;
+}
+
+#services .section-title span {
+    color: aquamarine
+}
+
+#services .services-top p {
+    font-size: 3rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300px;
+    letter-spacing: .1rem;
+}
+
+#services .service-item {
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(45, 92, 64);
+    background-size: cover;
+    margin: 10px 10%;
+}
+
+#services .service-item h2 {
+    font-size: 1.5rem;
+    color: cadetblue;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#services .service-item p {
+    color: white;
+    text-align: left;
+}
